@@ -18,7 +18,14 @@
     <header class="header">
         <div class="header__mask" id="header__mask"></div>
         <h1 class="header__title"><a href="#">KENKODO</a></h1>
-        <div class="header__shop"><a href="#">お買い物はこちら <i class="fas fa-shopping-cart"></i></a></div>
+        <a href="#">
+            <div class="header__shop">
+                <div class="header__shopIcon">
+                    <i class="fas fa-shopping-cart"></i>
+                </div>
+                <p class="header__text">お買い物</p>
+            </div>
+        </a>
         <div class="header__menuButton" id="header__menuButton">
             <span></span>
             <span></span>
@@ -77,61 +84,84 @@
 
     <!-- トップ画像のスライダー -->
     <div class="swiper-container">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide hero1"><a href="#">
-                    <div class="txt">
-                        <p>Good Sleep, Good Life</p>
-                        <h2>良い人生は 良い眠りから</h2>
-                        <div class="txt-link">
-                            <p>WEBサイトへ<i class="fas fa-angle-right" aria-hidden="true"></i></p>
-                        </div>
+        <div class="swiper-wrapper top">
+            <div class="swiper-slide top__img1">
+                <div class="top__box">
+                    <p class="top__text">Good Sleep, Good Life</p>
+                    <h2 class="top__title">良い人生は 良い眠りから</h2>
+                    <div class="top__link">
+                        <a href="#">製品一覧<i class="fas fa-angle-right" aria-hidden="true"></i></a>
                     </div>
-                </a></div>
-            <div class="swiper-slide hero2"><a href="#">
-                    <div class="txt">
-                        <p>Good Sleep, Good Life</p>
-                        <h2>おうちでほっと一息</h2>
-                        <div class="txt-link">
-                            <p>アイテム一覧を見る<i class="fas fa-angle-right" aria-hidden="true"></i></p>
-                        </div>
-                    </div>
-                </a></div>
-            <div class="swiper-slide hero3">
-                <a href="#">
-                    <div class="txt">
-                        <p>Good Sleep, Good Life</p>
-                        <h2>良い人生は 良い眠りから</h2>
-                        <div class="txt-link">
-                            <p>WEBサイトへ<i class="fas fa-angle-right" aria-hidden="true"></i></p>
-                        </div>
-                    </div>
-                </a>
+                </div>
             </div>
-            <div class="swiper-slide hero4">
-                <a href="#">
-                    <div class="txt">
-                        <p>Good Sleep, Good Life</p>
-                        <h2>家族みんなで温まろう</h2>
-                        <div class="txt-link">
-                            <p>アイテム一覧を見る<i class="fas fa-angle-right" aria-hidden="true"></i></p>
-                        </div>
+            <div class="swiper-slide top__img2">
+                <div class="top__box">
+                    <p class="top__text">Good Sleep, Good Life</p>
+                    <h2 class="top__title">良い人生は 良い眠りから</h2>
+                    <div class="top__link">
+                        <a href="#">製品一覧<i class="fas fa-angle-right" aria-hidden="true"></i></a>
                     </div>
-                </a>
+                </div>
+            </div>
+            <div class="swiper-slide top__img3">
+                <div class="top__box">
+                    <p class="top__text">Good Sleep, Good Life</p>
+                    <h2 class="top__title">良い人生は 良い眠りから</h2>
+                    <div class="top__link">
+                        <a href="#">製品一覧<i class="fas fa-angle-right" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide top__img4">
+                <div class="top__box">
+                    <p class="top__text">Good Sleep, Good Life</p>
+                    <h2 class="top__title">良い人生は 良い眠りから</h2>
+                    <div class="top__link">
+                        <a href="#"></a>製品一覧<i class="fas fa-angle-right" aria-hidden="true"></i></a>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="swiper-pagination"></div>
     </div>
 
-    <!-- 検索バーÏ -->
-    <div id="serch">
-        <form action="">
-            <input type="serch" placeholder="製品名で写真を検索">
-            <button><i class="fas fa-search" aria-hidden="true"></i></button>
-        </form>
-    </div>
+    <section class="about">
+        <h2 class="about__title">健康堂</h2>
+        <p class="about__text">広島健康堂にご訪問いただきありがとうございます。<br>
+        私たちは「最高の睡眠、最幸の人生」を掲げ活動しているヘルスケア企業です。<br>
+        自然豊かな瀬戸内にて Made in Setouchi を世界に発信しています。<br>
+        世界から見ても日本人は睡眠時間が短いことが有名で、近年では「睡眠負債」が問題視されるようになりました。良質な睡眠は人生に幸福をもたらします。<br>
+        私たちと一緒に睡眠の質について考えてみませんか。</p>
+    </section>
 
-    <section></section>
-    <section></section>
+    <section class="category">
+        <h2 class="category__title">寝具</h2>
+        <div class="category__box">
+            <img src="image/matress.png" alt="マットレス">
+            <div class="category__content">
+                <h3 class="category__subTitle"><span>M</span>ATRESS</h3>
+                <p class="category__text">かたさ、厚み、密度の異なる体圧分散寝具を提供しています。体重、体型、寝る姿勢は様々です。ご自分に最適な寝具を選ぶことで良い眠りを提供します。感染対策も考慮した最新の寝具を是非ごご覧ください。</p>
+                <button onclick="location.href='#'">READ MORE</button>
+            </div>
+        </div>
+        <div class="category__box">
+            <img src="image/pillow.png" alt="枕">
+            <div class="category__content">
+                <h3 class="category__subTitle"><span>P</span>ILLOW</h3>
+                <p class="category__text">睡眠において最も休めるべき頭部を支える役割を持つ「枕」。当社の枕は素材にこだわり、肌触り、通気性など群れにくく頭部、頚部を安定させ深い眠りを提供いたします。洗濯機での丸洗いができ、いつでも清潔です。</p>
+                <button onclick="location.href='#'">READ MORE</button>
+            </div>
+        </div>
+        <div class="category__box">
+            <img src="image/sheets.png" alt="機能シーツ">
+            <div class="category__content">
+                <h3 class="category__subTitle"><span>F</span>UNCTIONAL SHEETS</h3>
+                <p class="category__text">人は一晩にコップ一杯分の汗をかくと言われています。汗はシーツに染み込み、少しづつ寝具にも蓄積して行きます。優れた吸水拡散効果に加え寝具を汚れから守る最新のシーツを提供いたします。</p>
+                <button onclick="location.href='#'">READ MORE</button>
+            </div>
+        </div>
+    </section>
+
     <section></section>
     <section></section>
     <section></section>
